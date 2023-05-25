@@ -1,0 +1,239 @@
+/* nejsme vcerejsi, pouzivame moderni box model */
+html { box-sizing: border-box; }
+*, :after, :before { box-sizing: inherit; }
+
+
+/* -------------------------------------------------- */
+
+/*
+pouzivame mobile first pristup
+tj. vychozi styly mimo media query jsou pro nejmensi mobilni zarizeni (telefony)
+s pribyvajici sirkou pridavame media query pro...
+tablety:
+@media (min-width: 480px) {
+}
+notebook/pc:
+@media (min-width: 860px) {
+}
+*/
+
+
+body {
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.paticka {
+    text-align: center;
+    font-size: 14px;
+    color: silver;
+}
+
+.paticka a {
+    color: silver;
+}
+
+
+/* ------------------------------- */
+/* ----- DOLE BUDE TVOJE CSS ----- */
+/* ------------------------------- */
+
+/*Hlavni*/
+
+.doporucujeme {
+    display: flex;
+    flex: wrap;
+    flex-direction: column;
+}
+
+/*Burger obrázek*/
+
+.hlavni-recept {
+    background-image: url(images/burger.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    position: relative;
+}
+
+.recept-meta {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.recept-nazev1 {
+    position: absolute;
+    margin-top: 120Px;
+    padding: 10px;
+    font-size: 28px;
+    font-family: 'Raleway';
+}
+
+/*Obrázek sushi*/
+
+.recept2 {
+    background-image: url(images/sushi.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100px;
+}
+
+.recept-nazev {
+    padding: 10px;
+    font-size: 18px;  
+    font-family: 'Raleway';
+}
+
+/*Obrázek rajcata*/
+
+.recept3 {
+    background-image: url(images/kure.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100px;
+}
+
+/*Obrazek kure*/
+
+.recept4 {
+    background-image: url(images/rajcata.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100px;
+}
+
+/*Obrazek grilovani*/
+
+.recept5 {
+    background-image: url(images/grilovani.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100px;
+}
+
+/*Media*/
+
+@media (min-width: 480px) and (max-width:1028px) { 
+
+   .doporucujeme {
+    display: flex;
+    gap: 0.5px 0;
+    }
+
+    .hlavni-recept {
+      height: 500px; 
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+
+    .recepty {
+    display: flex;
+    flex-wrap: wrap;
+    height: 500px;
+    gap: 0.5px 0.5px;
+    }
+
+    .recept2,
+    .recept3,
+    .recept4,
+    .recept5 {
+      flex: 0 0 50%;  
+      height: 250px;
+      flex-basis: 49.9%;
+    }
+
+    .recept-meta {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        font-size: 14px;
+    }
+    
+    .recept-nazev1 {
+        position: absolute;
+        margin-top: 350Px;
+        padding: 20px;
+        font-size: 36px;
+    }
+
+    .recept-nazev {
+        position: absolute;
+        margin-top: 130Px;
+        padding: 20px;
+        font-size: 22px;
+    }
+    
+}
+
+@media (max-width:699px) {
+    .doporucujeme {
+        gap: 0.5px 0px;
+    }
+
+    .recepty {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5px 0.5px;
+    }
+}
+
+@media (min-width: 1029px) {
+  .doporucujeme {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5px 0.5px;
+  }
+
+  .hlavni-recept {
+    display: flex;
+    width: 30%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .recept-meta {
+    display: flex;
+    flex-basis: 100%;
+    font-size: 14px;
+  }
+
+  .recept-kategorie,
+  .recept-komentare {
+    padding: 20px;
+  }
+
+  .recept-nazev1 {
+    padding: 20px;
+    padding-top: 150px;
+    font-size: 48px;
+  }
+
+  .recept-nazev {
+    padding: 20px;
+    padding-top: 50px;
+    font-size: 28px;
+  }
+
+  .recepty {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 70%;
+    gap: 0.5px 0.5px;  
+  }
+
+  .recept2,
+  .recept3,
+  .recept4,
+  .recept5 {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+  }
+}
