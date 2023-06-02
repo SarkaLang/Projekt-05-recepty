@@ -66,7 +66,7 @@ body {
 
 .recept-nazev1 {
     position: absolute;
-    margin-top: 120Px;
+    margin-top: 190Px;
     padding: 10px;
     font-size: 28px;
     font-family: 'Raleway';
@@ -116,7 +116,7 @@ body {
 
 /*Media*/
 
-@media (min-width: 480px) and (max-width:1028px) { 
+@media (min-width: 480px) and (max-width:860px) { 
 
    .doporucujeme {
     display: flex;
@@ -169,19 +169,7 @@ body {
     
 }
 
-@media (max-width:699px) {
-    .doporucujeme {
-        gap: 0.5px 0px;
-    }
-
-    .recepty {
-        display: flex;
-        flex-direction: column;
-        gap: 0.5px 0.5px;
-    }
-}
-
-@media (min-width: 1029px) {
+@media (min-width: 861px) {
   .doporucujeme {
     display: flex;
     flex-direction: row;
