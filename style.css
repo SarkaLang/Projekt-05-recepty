@@ -55,6 +55,7 @@ body {
     background-position: center;
     height: 300px;
     position: relative;
+    margin-bottom: 1px;
 }
 
 .recept-meta {
@@ -79,6 +80,7 @@ body {
     background-size: cover;
     background-position: center;
     height: 100px;
+    margin-bottom: 1px;
 }
 
 .recept-nazev {
@@ -94,6 +96,7 @@ body {
     background-size: cover;
     background-position: center;
     height: 100px;
+       margin-bottom: 1px;
 }
 
 /*Obrazek kure*/
@@ -103,6 +106,7 @@ body {
     background-size: cover;
     background-position: center;
     height: 100px;
+       margin-bottom: 1px;
 }
 
 /*Obrazek grilovani*/
@@ -112,6 +116,7 @@ body {
     background-size: cover;
     background-position: center;
     height: 100px;
+       margin-bottom: 1px;
 }
 
 /*Media*/
@@ -197,8 +202,8 @@ body {
 
   .recept-nazev1 {
     padding: 20px;
-    padding-top: 150px;
-    font-size: 48px;
+    padding-top: 80px;
+    font-size: 2.5em;
   }
 
   .recept-nazev {
