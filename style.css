@@ -45,6 +45,8 @@ body {
     display: flex;
     flex: wrap;
     flex-direction: column;
+    text-overflow: none;
+    
 }
 
 /*Burger obrázek*/
@@ -56,6 +58,7 @@ body {
     height: 300px;
     position: relative;
     margin-bottom: 1px;
+
 }
 
 .recept-meta {
@@ -162,14 +165,14 @@ body {
         position: absolute;
         margin-top: 350Px;
         padding: 20px;
-        font-size: 36px;
+        font-size: 5vw;
     }
 
     .recept-nazev {
         position: absolute;
         margin-top: 130Px;
         padding: 20px;
-        font-size: 22px;
+        font-size: 3vw;
     }
     
 }
@@ -203,13 +206,13 @@ body {
   .recept-nazev1 {
     padding: 20px;
     padding-top: 80px;
-    font-size: 2.5em;
+    font-size: 3vw;
   }
 
   .recept-nazev {
     padding: 20px;
     padding-top: 50px;
-    font-size: 28px;
+    font-size: 2vw;
   }
 
   .recepty {
